@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct MainScreen:View{
+struct MainScreenView:View{
 	var body: some View {
 		Text("Ima main screen!")
 			.padding()
 	}
 }
 
-struct MainScreen_Previews:PreviewProvider{
+struct MainScreenView_Previews:PreviewProvider{
 	static var previews: some View{
-		MainScreen();
+		MainScreenView();
 	}
 }
