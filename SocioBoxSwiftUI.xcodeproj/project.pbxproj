@@ -8,18 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		A53112E025EF16FE00E8E38A /* SocioBoxSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112DF25EF16FE00E8E38A /* SocioBoxSwiftUIApp.swift */; };
-		A53112E225EF16FE00E8E38A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112E125EF16FE00E8E38A /* ContentView.swift */; };
 		A53112E425EF16FF00E8E38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53112E325EF16FF00E8E38A /* Assets.xcassets */; };
 		A53112E725EF16FF00E8E38A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53112E625EF16FF00E8E38A /* Preview Assets.xcassets */; };
+		A59321E025F117C9004A08D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321DF25F117C9004A08D9 /* User.swift */; };
+		A59321E325F117ED004A08D9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321E225F117ED004A08D9 /* Post.swift */; };
+		A59321E725F11841004A08D9 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321E625F11841004A08D9 /* Mocks.swift */; };
+		A59321EF25F118D3004A08D9 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321EE25F118D3004A08D9 /* MainScreenViewModel.swift */; };
+		A59321F225F118E9004A08D9 /* PostsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321F125F118E9004A08D9 /* PostsAPI.swift */; };
+		A59321F525F118F4004A08D9 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321F425F118F4004A08D9 /* UserAPI.swift */; };
+		A59321F825F11900004A08D9 /* PhotosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321F725F11900004A08D9 /* PhotosAPI.swift */; };
+		A59321FB25F11919004A08D9 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321FA25F11919004A08D9 /* UserProfileViewModel.swift */; };
+		A59321FE25F11927004A08D9 /* UserPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59321FD25F11927004A08D9 /* UserPostsViewModel.swift */; };
+		A593220125F1193B004A08D9 /* UserPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593220025F1193B004A08D9 /* UserPhotosViewModel.swift */; };
+		A593220725F11997004A08D9 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593220625F11997004A08D9 /* MainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A53112DC25EF16FE00E8E38A /* SocioBoxSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocioBoxSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53112DF25EF16FE00E8E38A /* SocioBoxSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocioBoxSwiftUIApp.swift; sourceTree = "<group>"; };
-		A53112E125EF16FE00E8E38A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A53112E325EF16FF00E8E38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A53112E625EF16FF00E8E38A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A53112E825EF16FF00E8E38A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59321DF25F117C9004A08D9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A59321E225F117ED004A08D9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A59321E625F11841004A08D9 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		A59321EE25F118D3004A08D9 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		A59321F125F118E9004A08D9 /* PostsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAPI.swift; sourceTree = "<group>"; };
+		A59321F425F118F4004A08D9 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		A59321F725F11900004A08D9 /* PhotosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPI.swift; sourceTree = "<group>"; };
+		A59321FA25F11919004A08D9 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		A59321FD25F11927004A08D9 /* UserPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsViewModel.swift; sourceTree = "<group>"; };
+		A593220025F1193B004A08D9 /* UserPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotosViewModel.swift; sourceTree = "<group>"; };
+		A593220625F11997004A08D9 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +72,9 @@
 		A53112DE25EF16FE00E8E38A /* SocioBoxSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A59321EA25F1189A004A08D9 /* Screens */,
+				A59321DD25F11794004A08D9 /* Data */,
 				A53112DF25EF16FE00E8E38A /* SocioBoxSwiftUIApp.swift */,
-				A53112E125EF16FE00E8E38A /* ContentView.swift */,
 				A53112E325EF16FF00E8E38A /* Assets.xcassets */,
 				A53112E825EF16FF00E8E38A /* Info.plist */,
 				A53112E525EF16FF00E8E38A /* Preview Content */,
@@ -67,6 +88,71 @@
 				A53112E625EF16FF00E8E38A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A59321DD25F11794004A08D9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A59321E525F1182C004A08D9 /* API */,
+				A59321DE25F117BC004A08D9 /* Types */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A59321DE25F117BC004A08D9 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				A59321DF25F117C9004A08D9 /* User.swift */,
+				A59321E225F117ED004A08D9 /* Post.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		A59321E525F1182C004A08D9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A59321E625F11841004A08D9 /* Mocks.swift */,
+				A59321F125F118E9004A08D9 /* PostsAPI.swift */,
+				A59321F425F118F4004A08D9 /* UserAPI.swift */,
+				A59321F725F11900004A08D9 /* PhotosAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A59321EA25F1189A004A08D9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A59321ED25F118C1004A08D9 /* PostScreen */,
+				A59321EC25F118B2004A08D9 /* FriendScreen */,
+				A59321EB25F118A4004A08D9 /* MainScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A59321EB25F118A4004A08D9 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A59321EE25F118D3004A08D9 /* MainScreenViewModel.swift */,
+				A59321FA25F11919004A08D9 /* UserProfileViewModel.swift */,
+				A59321FD25F11927004A08D9 /* UserPostsViewModel.swift */,
+				A593220025F1193B004A08D9 /* UserPhotosViewModel.swift */,
+				A593220625F11997004A08D9 /* MainScreen.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		A59321EC25F118B2004A08D9 /* FriendScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendScreen;
+			sourceTree = "<group>";
+		};
+		A59321ED25F118C1004A08D9 /* PostScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PostScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +224,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A53112E225EF16FE00E8E38A /* ContentView.swift in Sources */,
+				A593220125F1193B004A08D9 /* UserPhotosViewModel.swift in Sources */,
 				A53112E025EF16FE00E8E38A /* SocioBoxSwiftUIApp.swift in Sources */,
+				A59321E025F117C9004A08D9 /* User.swift in Sources */,
+				A59321FE25F11927004A08D9 /* UserPostsViewModel.swift in Sources */,
+				A593220725F11997004A08D9 /* MainScreen.swift in Sources */,
+				A59321F525F118F4004A08D9 /* UserAPI.swift in Sources */,
+				A59321F825F11900004A08D9 /* PhotosAPI.swift in Sources */,
+				A59321E325F117ED004A08D9 /* Post.swift in Sources */,
+				A59321E725F11841004A08D9 /* Mocks.swift in Sources */,
+				A59321FB25F11919004A08D9 /* UserProfileViewModel.swift in Sources */,
+				A59321EF25F118D3004A08D9 /* MainScreenViewModel.swift in Sources */,
+				A59321F225F118E9004A08D9 /* PostsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
