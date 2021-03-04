@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct SocioBoxSwiftUIApp: App {
+	
+	private let diContainer = DIContainer();
+	
     var body: some Scene {
         WindowGroup {
 		MainScreenView()

@@ -46,6 +46,12 @@ struct PostsListItemView_Previews: PreviewProvider {
     }
 }
 
+
+
+
+
+
+//MARK: - PostPicture component
 private struct PostPicture:View{
 	let picture:UIImage;
 	

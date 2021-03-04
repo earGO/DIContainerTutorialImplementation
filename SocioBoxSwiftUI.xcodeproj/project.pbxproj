@@ -28,6 +28,7 @@
 		A593221E25F128EA004A08D9 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593221D25F128EA004A08D9 /* UserProfile.swift */; };
 		A593222225F12F48004A08D9 /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593222125F12F48004A08D9 /* APIErrors.swift */; };
 		A593222625F13024004A08D9 /* DI_structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593222525F13024004A08D9 /* DI_structs.swift */; };
+		A593222A25F17227004A08D9 /* DI_container.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593222925F17227004A08D9 /* DI_container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		A593221D25F128EA004A08D9 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		A593222125F12F48004A08D9 /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
 		A593222525F13024004A08D9 /* DI_structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI_structs.swift; sourceTree = "<group>"; };
+		A593222925F17227004A08D9 /* DI_container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI_container.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				A593222525F13024004A08D9 /* DI_structs.swift */,
+				A593222925F17227004A08D9 /* DI_container.swift */,
 			);
 			path = DI_container;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				A593220125F1193B004A08D9 /* UserPhotosViewModel.swift in Sources */,
 				A593221525F122B7004A08D9 /* ImageLoader.swift in Sources */,
 				A53112E025EF16FE00E8E38A /* SocioBoxSwiftUIApp.swift in Sources */,
+				A593222A25F17227004A08D9 /* DI_container.swift in Sources */,
 				A59321E025F117C9004A08D9 /* User.swift in Sources */,
 				A59321FE25F11927004A08D9 /* UserPostsViewModel.swift in Sources */,
 				A593220725F11997004A08D9 /* MainScreenView.swift in Sources */,
