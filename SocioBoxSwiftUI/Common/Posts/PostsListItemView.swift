@@ -37,8 +37,12 @@ struct PostsListItemView_Previews: PreviewProvider {
 	static var previewPicture = UIImage(named: "img_placeholder", in: Bundle(for: ImageLoader.self), with: nil) ?? UIImage()
 	
     static var previews: some View {
-	PostsListItemView(20,10,"Such a nice place!", previewPicture)
-		.preferredColorScheme(.dark)
+	VStack {
+		PostsListItemView(20,10,"Such a nice place!", previewPicture)
+			.preferredColorScheme(.dark)
+		PostsListItemView(200,142,"", previewPicture)
+			.preferredColorScheme(.dark)
+	}
     }
 }
 
@@ -50,7 +54,7 @@ private struct PostPicture:View{
 			Image(uiImage: picture)
 				.resizable()
 				.aspectRatio(contentMode: .fill)
-				.frame(width: geo.size.width, height: 224.0, alignment: .top)
+				.frame(width: geo.size.width, height: 224.0, alignment: .center)
 				.clipped()
 		}
 	}
