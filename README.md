@@ -4,11 +4,17 @@ https://www.raywenderlich.com/14223279-dependency-injection-tutorial-for-ios-get
 
 It's part of "complete 10 tutorials on MVVM and DI in Swift" that I've challenged myself with.
 
-###What's different
+### What's different
 As usual, the app in the tutorial is scaffolded using UIKit, but I need to practice SwiftUI, so I have rewrote it using pure SwiftUI app. Also as an additional complication I've used this API https://dummyapi.io/explorer, and decided to use the DI, created during the tutorial, to refactor the app to MVVM pattern.
 
 Unlike the "Combine weather" tutorial, this time I've spend some time figuring out "the path to what they have as a starter project", since the gap between "code after me" and "create the app from scratch" is something I struggle after every UDEMY course. And next gap will be "create something complex production-grade", but that's for the tutorials to come. Anyways, this time it involved drawing some charts and schemas before writing some actual code.
 
 Still isn't good enough, but I'm getting there.
 
-My goal is to develop a methodology of creating apps with good clean scalable architecture from scratch. I have an example of the app architecture I aim for, and these are my steps to be able to produce this structure from the SwiftUI empty app, produced by xCode. 
+My goal is to develop a methodology of creating apps with good clean scalable architecture from scratch. I have an example of the app architecture I aim for, and these are my steps to be able to produce this structure from the SwiftUI empty app, produced by xCode.
+
+### The process
+After figuring out the structure of the screen (the tutorial have only one screen, but I've decided to add couple more as a challenge with *), I've decided to work in this sequence:
+data API -> components views (like 1 post in a list of posts) -> component view models -> Big component views (like the list of posts or the user profile) -> big components view-model -> screen view -> screen view model.
+
+This approach may or may not be wrong, but that's the goal of these tutorials - to make mistakes. The plan was to go as far as I could on my own without ever opening the previous tutorial (CombineWeather) or a reference pages other than the documentation. The "Learning how to learn" course on Coursera suggests that this is most productive way of learning things.
