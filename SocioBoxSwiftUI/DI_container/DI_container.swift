@@ -5,6 +5,8 @@ class DIContainer {
 	
 	init(){
 		self.userApi = UserApi();
+		addDependencies();
+
 	}
 	
 	private func addDependencies(){

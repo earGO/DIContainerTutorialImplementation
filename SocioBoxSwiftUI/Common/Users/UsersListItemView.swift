@@ -7,28 +7,28 @@
 
 import SwiftUI
 
-struct UsersListItem: View {
+struct UsersListItemView: View, Identifiable {
+	var id: ObjectIdentifier
 	
-	let userAvatar:UIImage;
-	let userName:String;
 	
-	init(_ userName:String, _ avatar:UIImage){
-		self.userAvatar = avatar;
-		self.userName = userName;
+	@ObservedObject var viewModel: UserProfileViewModel
+	
+	init(viewModel: UserProfileViewModel){
+		self.viewModel = viewModel;
 	}
 	
 	
     var body: some View {
 	VStack {
 		GeometryReader { geo in
-			Image(uiImage: userAvatar)
+			Image(uiImage: viewModel.userAvatar)
 				.resizable()
 				.aspectRatio(contentMode: .fill)
 				.frame(width: geo.size.width, height: 123, alignment: .center)
 				.clipped()
 			
 		}
-		Text(userName)
+		Text(viewModel.name)
 			.padding(.vertical, 6)
 	}.frame(maxWidth: 76,maxHeight: 154 )
     }
@@ -38,7 +38,8 @@ struct UsersListItem_Previews: PreviewProvider {
 	static var previewAvatar = UIImage(named: "img_placeholder", in: Bundle(for: ImageLoader.self), with: nil) ?? UIImage()
 	
     static var previews: some View {
-	UsersListItem("Josh", previewAvatar)
+	let viewModel=UserProfileViewModel();
+	UsersListItem(viewModel:viewModel)
 		.preferredColorScheme(.dark)
     }
 }

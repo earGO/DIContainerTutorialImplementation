@@ -6,19 +6,14 @@
 //
 
 import SwiftUI
+import Combine
 
-struct UserProfile: View {
+struct UserProfileView: View {
 	
-	let avatar:UIImage;
-	let name:String;
-	let area:String;
-	let bio:String;
+	@ObservedObject var viewModel: UserProfileViewModel
 	
-	init( name:String, avatar:UIImage, bio:String, area:String ){
-		self.avatar = avatar;
-		self.name = name;
-		self.area = area;
-		self.bio = bio;
+	init( viewModel:UserProfileViewModel ){
+		self.viewModel = viewModel;
 	}
 	
     var body: some View {
@@ -31,7 +26,7 @@ struct UserProfile: View {
 			}.padding(.trailing, 12)
 			HStack {
 				Spacer()
-					Image(uiImage: avatar)
+				Image(uiImage: viewModel.userAvatar)
 						.resizable()
 						.aspectRatio(contentMode: .fill)
 						.frame(width: geo.size.width/4.17, height: geo.size.width/4.17, alignment: .center)
@@ -40,16 +35,16 @@ struct UserProfile: View {
 				
 				Spacer()
 			}
-			Text(name)
+			Text(viewModel.name)
 				.font(.largeTitle)
 			HStack{
 				Image(systemName: "location")
 					.accentColor(.blue)
-				Text(area)
+				Text(viewModel.area)
 					.font(.callout)
 			}
 			.padding(.top, 6)
-			Text(bio)
+			Text(viewModel.bio)
 				.font(.callout)
 				.padding(.top, 28)
 				.padding(.horizontal, 28)
@@ -60,12 +55,13 @@ struct UserProfile: View {
     }
 }
 
-struct UserProfile_Previews: PreviewProvider {
+struct UserProfileView_Previews: PreviewProvider {
 	static var previewAvatar = UIImage(named: "img_placeholder", in: Bundle(for: ImageLoader.self), with: nil) ?? UIImage()
 	static let previewUser = Mock.user();
 	
     static var previews: some View {
-	UserProfile(name:previewUser.name, avatar: previewAvatar,bio:previewUser.bio, area: previewUser.area )
+	let viewModel=UserProfileViewModel();
+	UserProfileView(viewModel:viewModel )
 		.preferredColorScheme(.dark)
     }
 }

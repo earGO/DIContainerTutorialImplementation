@@ -11,10 +11,13 @@ import SwiftUI
 struct SocioBoxSwiftUIApp: App {
 	
 	private let diContainer = DIContainer();
+	private let mainScreenViewModel = MainScreenViewModel();
+	private let userProfileViewModel = UserProfileViewModel();
+	private let friendsViewModel = FriendsListViewModel();
 	
     var body: some Scene {
         WindowGroup {
-		MainScreenView()
+		MainScreenView(viewModel:mainScreenViewModel,userProfileViewModel: userProfileViewModel,friendsViewModel:friendsViewModel)
         }
     }
 }

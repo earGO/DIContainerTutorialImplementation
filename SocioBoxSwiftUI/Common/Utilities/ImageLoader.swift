@@ -1,7 +1,7 @@
 import Combine
 import SwiftUI
 
-class ImageLoader: ObservableObject {
+class ImageLoader: ObservableObject, Injectable {
 	var didChange = PassthroughSubject<UIImage, Never>()
 	var image = UIImage() {
 		didSet {
